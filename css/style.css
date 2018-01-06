@@ -1,0 +1,100 @@
+body{
+  background-color:#DDDDDD;
+}
+.logo{
+  background-color: #364453;
+  width: 160px;
+  height: 32px;
+  margin: 16px 32px;
+  float: left;
+}
+nav{
+background-color: #041528;
+width: 106px;
+height: 64px;
+float: left;
+}
+nav:hover{
+  background-color: #4090F7;
+}
+p{
+  font-size: 20px;
+  color:#ffffff;
+  margin: 19px 24px;
+}
+
+header{
+  background-color: #041528;
+  width: auto;
+  height: 64px;
+}
+
+.icon{
+  font-size: 16px;
+  float: right;
+  margin: 22px 16px 26px 16px;
+  color: #ffffff;
+}
+
+
+.container {
+  width: 400px;
+  height: 200px;
+  margin: 32px 16px;
+  background:#ffffff;
+  float: left;
+
+
+}
+
+.card {
+  padding: 0px;
+  width: 400px;
+  height: 200px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  position: relative;
+  cursor:pointer;
+}
+
+.card div {
+  padding: 0px;
+  width: 400px;
+  height: 200px;
+  color: #ffffff;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.card .front {
+  background: #ffffff;
+}
+
+.card .back {
+  transform: rotateY( 180deg );
+}
+
+.container:hover .card{
+  transform: rotateY( 180deg );
+}
+
+
+
+@media (min-width: 1200px) {
+  .icon{
+    display: none;
+  }
+
+
+}
+@media (max-width: 992px) {
+  .icon{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+.icon{
+  display: none;
+}
+}
